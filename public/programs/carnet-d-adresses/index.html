@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Carnet d'adresses</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <link rel="stylesheet" href="css/knacss.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="pal">
+
+<header>
+    <h1><i class="fas fa-address-book mrs"></i>Carnet d'adresses</h1>
+</header>
+
+<main>
+    <section>
+        <button id="displayNewContactForm" class="btn--warning fr mbm"><i class="fas fa-user-plus mrs"></i>Ajouter</button>
+        <ul id="list" class="is-unstyled mam"></ul>
+    </section>
+    <hr />
+    <div id="alert" class="mauto txtcenter"> </div>
+    <section id="newContact" class="pam">
+        <form id="newContactForm" action="#">
+            <h3><i class="fas fa-user-tie mrs"></i><span>Nouveau contact</span></h3>
+            <input type="text" placeholder="prénom" id="firstName" />
+            <input type="text" placeholder="nom" id="lastName" />
+            <input type="tel" placeholder="n° téléphone" id="phone" />
+            <div class="mam">
+                <button id="addNewContact" class="btn--warning"><i class="fas fa-user-plus mrs"></i><span>Ajouter</span></button>
+                <button id="hideNewContact" class="btn"><i class="fas fa-ban mrs"></i>Annuler</button>
+            </div>
+        </form>
+    </section>
+    <section id="displayRecord" class="alert--info pal">
+        <button id="hideRecord" class="btn--info fr"><i class="fas fa-times"></i></button>
+        <h2><i class="fas fa-user-tie mrs"></i><span id="recordName"></span></h2>
+        <p class="h4-like"><i class="fas fa-phone mrs"></i><span id="recordPhone"></span></p>
+        <div class="mam">
+            <button id="modifyRecord" class="btn--primary"><i class="fas fa-pen mrs"></i>Modifier</button>
+            <button id="deleteRecord" class="btn--inverse"><i class="fas fa-user-minus mrs"></i>Supprimer</button>
+        </div>
+    </section>
+</main>
+
+<footer class="ptl">
+    <button id="deleteAll" class="btn--danger fr"><i class="far fa-trash-alt"></i></button>
+    <a href="http://mathiasmille.fr"><i class="fas fa-chevron-left"></i> retour</a>
+    <p><em>Exercice réalisé dans le cadre de la formation de Développeur/Intégrateur Web à la <a href="https://3wa.fr/">3W Academy</a>.</em></p>
+</footer>
+
+<script src="js/script.js"></script>
+<script>$(document).ready(function(){
+    adBk.init();
+});</script>
+
+</body>
+</html>

@@ -1,0 +1,228 @@
+html {
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0 50px;
+    background-color: #ffafda;
+}
+
+section {
+    padding: 0 0 25px;
+    margin: 10px auto;
+}
+
+#todolist {
+    border-bottom: 1px solid #666;
+}
+
+/************************************
+    FONTS
+**************************************/
+
+body, input, textarea {
+    font-family: 'Roboto', sans-serif;
+    color: #6c75ba;
+}
+
+h1, .h1,
+h2, .h2 {
+    font-family: 'Lobster Two', cursive;
+}
+
+/************************************
+    HTML
+**************************************/
+
+h3, .h3 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin: 0.2em 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*****************
+ Formulaires */
+
+input[type="text"], textarea {
+    border: none;
+    border-radius: 5px;
+    background-color: #ffe6f3;
+    padding: 10px;
+    color: #6c75ba;
+    font-size: 1.3em;
+}
+input[type="text"]:focus, textarea:focus {
+    box-shadow: 0 0 10px #6c75ba;
+    outline: none;
+}
+    
+input[type="text"], textarea {
+    width: 500px;
+    max-width: 100%;
+}
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* Boutons */
+
+input[type="submit"], input[type="submit"]:focus,
+input[type="reset"], input[type="reset"]:focus {
+    color: #cccdd8;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 200ms;
+}
+input[type="submit"] {
+    text-transform: uppercase;
+    background-color: #6c75ba;
+    padding: 10px 15px;
+    box-shadow: 0 0 5px #767a9b;
+}
+input[type="submit"]:disabled {
+    opacity: 0.5;
+    cursor: inherit;
+}
+input[type="reset"] {
+    font-size: 0.8em;
+    background-color: #6c75ba80;
+    padding: 7px 10px;
+    margin: 0 15px;
+    box-shadow: 0 0 2px #767a9b;
+}
+input[type="reset"]:hover,
+input[type="submit"]:not(:disabled):hover {
+    background-color: #6c75ba;
+    color: #fff;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+}
+
+#deleteTasks {
+    margin-right: 150px;
+}
+
+.checkbox-group label,
+.radio-group label {
+    display: inline-block;
+}
+
+.low label {
+    color: #6c75ba;
+}
+.normal label {
+    color: #181663;
+}
+.high label {
+    color: #ff0089;
+}
+
+.late {
+    color: #ff0089;
+    text-transform: uppercase;
+}
+
+.checkbox-group input:checked ~ label {
+    text-decoration: line-through;
+}
+
+.alert {
+    display: none;
+    color: #ff0089;
+}
+
+/************************************
+    CUSTOM
+**************************************/
+
+#kiki img {
+    position: absolute;
+    top: -50px;
+    right: -25px;
+    border-radius: 50%;
+    width: 150px;
+    border: 5px solid #6c75ba;
+    box-shadow: 0 0 15px #dacbd3;
+    transform: rotate(15deg);
+    opacity: 0.8;
+    transition: all 500ms;
+}
+
+#kiki img:hover {
+    opacity: 1;
+    animation-name: animKiki;
+    animation-duration: 200ms;
+    animation-iteration-count: infinite;
+}
+
+#kiki .tooltip {
+    top: 50px; right: 0;
+}
+
+@keyframes animKiki {
+    0%   {transform: rotate(5deg)}
+    50%  {transform: rotate(-5deg)}
+}
+
+.fas {
+    display: inline-block;
+    content: "";
+    width: 15px; height: 15px;
+    margin: -4px 5px 0 5px;
+    vertical-align: middle;
+    opacity: 0.8;
+    transition: all 150ms;
+}
+
+.fas:hover {
+    opacity: 1;
+}
+
+.fa-pencil-alt { background-image: url("../img/pencil-alt.svg"); }
+
+/****************************************
+    TOOLTIP
+*****************************************/
+
+.tooltiped {
+    position: relative;
+    
+}
+.tooltip {
+    position: absolute;
+    top: -50%;
+    margin-left: 10px;
+    background-color: #ffe6f3;
+    padding: 10px;
+    border-radius: 20px;
+    z-index: 900;
+    box-shadow: -2px 0 5px #7d86c5;
+    transform: scale(0.5) translate(-50px);
+    opacity: 0;
+    transition: all 150ms;
+}
+.tooltip em {
+    color: #dd62a4;
+}
+
+.tooltiped label:hover ~ .tooltip,
+.tooltiped img:hover ~ .tooltip {
+    transform: scale(1) translate(0);
+    opacity: 1;
+}

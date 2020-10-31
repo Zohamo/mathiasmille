@@ -1,0 +1,10 @@
+
+#newContact, #displayRecord {
+    display: none;
+}
+
+footer {
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+}
