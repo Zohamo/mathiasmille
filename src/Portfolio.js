@@ -17,17 +17,6 @@ class Portfolio extends Component {
           </figure>
         </section>
 
-        <section id="website-boardgames" className="portfolio-item slideup">
-          <figure>
-            <img src="./img/websites/boardgames.jpg" alt="Board Games" />
-            <figcaption>
-              <h3>Listing de jeux de société</h3>
-              <a className="button" href="http://binjoug.prootrecords.com/boardgames/">Voir le site</a>
-              <p><span>#PHP</span> <span>#SQL</span> <span>#JQuery</span> <span>#PolyFill</span></p>
-            </figcaption>
-          </figure>
-        </section>
-
         <section id="website-artdojo" className="portfolio-item slideup">
           <figure>
             <img src="./img/websites/artdojo.jpg" alt="Art Dojo" />
@@ -35,17 +24,6 @@ class Portfolio extends Component {
               <h3>Karaté &amp; Peintures<br/><small>par Anne Goudenove</small></h3>
               <a className="button" href="http://art-dojo.com">Voir le site</a>
               <p><span>#Wix</span> <span>#Ecommerce</span> <span>#SEO</span></p>
-            </figcaption>
-          </figure>
-        </section>
-
-        <section id="program-ardoisemagique" className="portfolio-item slideup">
-          <figure>
-            <img src="./img/programs/ardoisemagique.jpg" alt="Ardoise Magique" />
-            <figcaption>
-              <h3>Gribouillis ou jolis dessins&nbsp;?</h3>
-              <a className="button" href="http://mathiasmille.fr/programs/ardoise-magique">Essayer ce programme</a>
-              <p><span>#JavaScript</span> <span>#JQuery</span></p>
             </figcaption>
           </figure>
         </section>
@@ -57,28 +35,6 @@ class Portfolio extends Component {
               <h3>Service à la personne et transports culturels</h3>
               <a className="button" href="http://zair.fr">Voir le site</a>
               <p><span className="tooltip"><span className="tooltip-item help">#SPA</span><span className="tooltip-content clearfix"><span className="tooltip-text"><strong>Single Page Application</strong></span></span></span> <span>#Responsive</span> <span>#HTML5/CSS3</span></p>
-            </figcaption>
-          </figure>
-        </section>
-
-        <section id="program-todolist" className="portfolio-item slideup">
-          <figure>
-            <img src="./img/programs/todolist.jpg" alt="Todolist" />
-            <figcaption>
-              <h3>Pour ne jamais rien oublier&nbsp;!</h3>
-              <a className="button" href="http://mathiasmille.fr/programs/todolist">Essayer ce programme</a>
-              <p><span>#PHP</span> <span>#AJAX</span> <span>#CSV</span></p>
-            </figcaption>
-          </figure>
-        </section>
-
-        <section id="program-addressbook" className="portfolio-item slideup">
-          <figure>
-            <img src="./img/programs/addressbook.jpg" alt="Carnet d'adresses" />
-            <figcaption>
-              <h3>Toujours pratique&nbsp;!</h3>
-              <a className="button" href="http://mathiasmille.fr/programs/carnet-d-adresses">Essayer ce programme</a>
-              <p><span>#JavaScript</span> <span>#JQuery</span> <span>#LocalStorage</span> <span>#Knacss</span></p>
             </figcaption>
           </figure>
         </section>
