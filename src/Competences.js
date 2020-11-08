@@ -16,19 +16,19 @@ class Competences extends Component {
           <section id="langages" className="competences-item flex col slideup">
               <h3>Langages</h3>
               <div className="star">
-                  <p><span className="lang-html">HTML5</span> <span className="lang-css">CSS3</span> <span className="lang-javascript">JavaScript</span> <span className="lang-php">PHP</span> <span className="lang-mysql">MySQL</span></p>
+                  <p><span className="lang-html">HTML5</span> <span className="lang-css">CSS3</span> <span className="lang-css">Sass/Scss</span> <span className="lang-javascript">JavaScript</span> <span className="lang-javascript">TypeScript</span> <span className="lang-php">PHP</span> <span className="lang-mysql">MySQL</span></p>
               </div>
               <div className="other">
-                  <p><span className="lang-css">Less</span> <span className="lang-css">Sass/Scss</span> <span className="lang-javascript">JSX</span> <span className="lang-typescript">TypeScript</span> <span className="lang-twig">Twig</span></p>
+                  <p><span className="lang-css">Less</span> <span className="lang-javascript">JSX</span> <span className="lang-twig">Twig</span></p>
               </div>
           </section>
           <section id="frameworks" className="competences-item flex col slideup">
               <h3>Frameworks</h3>
               <div className="star">
-                  <p><span className="lang-javascript">JQuery</span> <span className="lang-css">Bootstrap</span></p>
+                  <p><span className="lang-typescript">Angular</span> <span className="lang-css">Bootstrap</span> <span className="lang-javascript">JQuery</span> <span className="lang-php">Laravel</span></p>
               </div>
               <div className="other">
-                  <p><span className="lang-javascript">NodeJS</span> <span className="lang-javascript">ReactJS</span> <span className="lang-typescript">Angular</span> <span className="lang-php">Laravel</span> <span className="lang-php">Zend</span> <span className="lang-php">Symfony</span> <span className="lang-css">Knacss</span> <span className="lang-css">Bulma</span> <span className="lang-css">Picnic</span></p>
+                  <p><span className="lang-javascript">NodeJS</span> <span className="lang-javascript">NestJS</span> <span className="lang-javascript">React</span> <span className="lang-php">Zend</span> <span className="lang-php">Symfony</span> <span className="lang-css">Knacss</span> <span className="lang-css">Bulma</span> <span className="lang-css">Picnic</span></p>
               </div>
           </section>
           <section id="cms" className="competences-item flex col slideup">

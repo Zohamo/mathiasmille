@@ -17,6 +17,10 @@ body {
   background-color: #fff;
 }
 
+#root {
+  overflow: hidden;
+}
+
 #root > div {
   display: flex;
   flex-direction: column;
@@ -26,7 +30,6 @@ body {
 
 main {
   max-width: 100%;
-  overflow: hidden;
   padding: 10px 10px 50px;
 }
 
@@ -156,8 +159,6 @@ button,
 button:hover,
 .button:hover {
   opacity: 1;
-  -webkit-transform: scale(1.03);
-  transform: scale(1.03);
 }
 
 /***********************
@@ -215,7 +216,6 @@ ul.unstyled {
 }
 
 #main-nav {
-  overflow: hidden;
   margin-top: 25px;
   font-size: 1.618rem;
 }
@@ -352,7 +352,7 @@ ul#social-network {
 
 /********************************************
 
-	===== portfolioS ===== 
+	===== PORTFOLIO ===== 
 
 ********************************************/
 
